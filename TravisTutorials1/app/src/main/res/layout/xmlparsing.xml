@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="17dp"
+        android:id="@+id/tvWXMLPCityTag"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginStart="32dp"
+        android:id="@+id/etWXMLPCity"
+        android:layout_alignBaseline="@+id/tvWXMLPCityTag"
+        android:layout_alignBottom="@+id/tvWXMLPCityTag"
+        android:layout_toEndOf="@+id/tvWXMLPCityTag"
+        android:hint="City, State" />
+
+    <TextView
+        android:text="Humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/tvWXMLPHumidity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@+id/tvWXMLPWeather"
+        android:layout_alignStart="@+id/tvWXMLPTemperature" />
+
+    <TextView
+        android:text="City"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvWXMLPCity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_below="@+id/bWXMLPGetWeather"
+        android:layout_alignStart="@+id/tvWXMLPCityTag" />
+
+    <TextView
+        android:text="Country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWXMLPCountry"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_alignTop="@+id/tvWXMLPCity"
+        android:layout_toEndOf="@+id/tvWXMLPCity" />
+
+    <TextView
+        android:text="Weather"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:id="@+id/tvWXMLPWeather"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@+id/tvWXMLPCountry"
+        android:layout_alignStart="@+id/tvWXMLPCountry"
+        android:layout_alignEnd="@+id/ivWXMLPIcon" />
+
+    <TextView
+        android:text="Temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWXMLPTemperature"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_alignBottom="@+id/tvWXMLPWeather"
+        android:layout_alignStart="@+id/tvWXMLPCity" />
+
+    <Button
+        android:text="Weather(Async)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etWXMLPCity"
+        android:layout_toEndOf="@+id/bWXMLPGetWeather"
+        android:id="@+id/bWXMLPGetWeatherAsync" />
+
+    <Button
+        android:text="Weather(Sync)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bWXMLPGetWeather"
+        android:layout_below="@+id/etWXMLPCity"
+        android:layout_alignStart="@+id/tvWXMLPCityTag"
+        android:layout_marginStart="20dp" />
+</RelativeLayout>

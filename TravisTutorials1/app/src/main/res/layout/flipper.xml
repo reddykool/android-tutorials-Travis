@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewFlipper"
+        android:background="@android:color/holo_orange_dark">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:id="@+id/button2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flipper 2"
+            android:id="@+id/textView1"
+            android:layout_gravity="left"
+            android:textSize="50dp"
+            android:textColor="@android:color/holo_green_dark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flipper 3"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:textSize="60dp"
+            android:textColor="@android:color/holo_blue_bright"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flipper 4"
+            android:id="@+id/textView3"
+            android:layout_gravity="right"
+            android:textSize="70dp"
+            android:textColor="@android:color/holo_purple"/>
+    </ViewFlipper>
+
+</LinearLayout>

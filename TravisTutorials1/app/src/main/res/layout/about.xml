@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="'Purushotham Reddy' is super cool Techno-Business enthusiast. He is an IT professional turned Businessman, who loves to be an Entrepreneur in broad perspective and contribute through/to Technology as well. Loves challenges and open to explore new ideas and concepts for collaborative evolution. He is on fast-track of becoming a Self-Made Multi-Millionaire and a Billionaire eventually. Ready to help aspiring like-minded-Enthusiast !!! \n\n Inspired to Inspire ... \n-- Just Do It ! "
+        android:id="@+id/tvAbout"/>
+
+
+</LinearLayout>

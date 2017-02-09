@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.reddyz.travistutorials1">
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Main Activity">
+            <intent-filter>
+                <action android:name="com.example.reddyz.travistutorials1.MAINACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="Menu Page"
+            android:theme="@style/Base.V23.Theme.AppCompat">
+            <intent-filter>
+                <action android:name="com.example.reddyz.travistutorials1.MENU" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TextPlay"
+            android:label="Text Play"
+            android:theme="@style/Base.V7.Theme.AppCompat"/>
+        <activity
+            android:name=".Email"
+            android:label="Email App"/>
+        <activity
+            android:name=".Camera"
+            android:label="Camera App"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat"/>
+        <activity
+            android:name=".Data"
+            android:label="Data Send/Receive" />
+        <activity android:name=".DataOp" />
+        <activity
+            android:name=".AboutUs"
+            android:label="About Us"
+            android:theme="@style/AppTheme.dialog"></activity>
+        <activity
+            android:name=".Prefs"
+            android:label="Preferences" />
+        <activity
+            android:name=".GFX"
+            android:label="Graphics" />
+        <activity
+            android:name=".GFXSurface"
+            android:label="Graphics Surface-Lite" />
+        <activity
+            android:name=".SoundStuff"
+            android:label="Sound Stuff" />
+        <activity
+            android:name=".Slider"
+            android:label="Slider" />
+        <activity
+            android:name=".Tabs"
+            android:label="Tabs" />
+        <activity
+            android:name=".SimpleBrowser"
+            android:label="Browser" />
+        <activity
+            android:name=".Flipper"
+            android:label="View Flipper" />
+        <activity
+            android:name=".SharedPref"
+            android:label="Shared Preferences" />
+        <activity
+            android:name=".InternalData"
+            android:label="InternalData" />
+        <activity
+            android:name=".ExternalData"
+            android:label="ExternalData" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".SqlLite"
+            android:label="Sql Lite" />
+        <activity
+            android:name=".SqlView"
+            android:label="SQL View" />
+        <activity
+            android:name=".Accelerate"
+            android:label="Sensor" />
+        <activity
+            android:name=".HttpSample"
+            android:label="Http Sample" />
+        <activity
+            android:name=".HttpJson"
+            android:label="Http Json" />
+        <activity
+            android:name=".WeatherXmlParsing"
+            android:label="Weather" />
+
+        <receiver android:name=".SampleAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/sample_app_widget_info" />
+        </receiver>
+
+        <activity android:name=".WidgetConfig" android:label="Configure">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".GLExample"
+            android:label="GLExample" />
+
+        <activity
+            android:name=".Voice"
+            android:label="Voice Recognition"/>
+
+        <activity
+            android:name=".TextToVoice"
+            android:label="Text To Speech"/>
+
+        <activity
+            android:name=".StatusBar"
+            android:label="Notifications"/>
+
+        <activity
+            android:name=".SeekBarVolume"
+            android:label="SeekBar - Volume"/>
+
+    </application>
+
+</manifest>
